@@ -20,10 +20,10 @@
 
         <!--Navbar-->
         <nav class="flex">
-            <a href="" class="border p~{4px}">Home</a>
-            <a href="" class="border p~{4px}">Our Profil</a>
-            <a href="" class="border p~{4px}">Portofolio</a>
-            <a href="" class="border p~{4px}">Message Us</a>
+            <a href="#home-page" class="border p~{4px}">Home</a>
+            <a href="#our-profil" class="border p~{4px}">Our Profil</a>
+            <a href="#portofolio" class="border p~{4px}">Portofolio</a>
+            <a href="#message-us" class="border p~{4px}">Message Us</a>
         </nav>
     </header>
 
@@ -33,10 +33,10 @@
     <main>
 
         <!--Home-->
-        <section id="home-page" class="min-h-{500px}">
+        <section id="home-page" class="min-h-[500px]">
             <header>
                 <h2 class="text-center text{24px} font-bold py-{16px}">
-                    Welcome to Our Website
+                    Welcome <span id="username"></span> to Our Website
                 </h2>
             </header>
             <p class="text-center">
@@ -46,29 +46,95 @@
         <hr/>
 
         <!--Our Profil-->
-        <section id="our-profile" class="min-h-{500px}">
+        <section id="our-profile"class="min-h-[500px]">
             <header>
                 <h2 class="text-center text{24px} font-bold py-{16px}">
                     Our Profil
                 </h2>
             </header>
-        </section>
-        
+            <p>TechNova Solutions adalah perusahaan rintisan di bidang teknologi digital yang berfokus pada pengembangan perangkat lunak, desain web, dan solusi berbasis cloud. Berdiri sejak tahun 2020, TechNova hadir untuk membantu bisnis beradaptasi dengan era digital melalui layanan inovatif, modern, dan berorientasi pada hasil</p>
+            <header>
+                <h3 class="text-left text{20px} font-bold py-{16px}">
+                    Our Headquarters
+                </h3>
+            </header>
+            <section class="text-center">
+    
+
+        <div class="flex flex-wrap justify-center gap-10">
+        <!-- Gambar 1 -->
+        <div class="text-center">
+        <img src= https://picsum.photos/id/10/2500/1667
+             class="w-32 h-32 rounded-full object-cover mx-auto shadow-md" />
+            <p class="mt-3 font-semibold text-gray-700">Jakarta</p>
+        </div>
+
+      <!-- Gambar 2 -->
+        <div class="text-center">
+        <img src=https://picsum.photos/id/11/2500/1667
+             class="w-32 h-32 rounded-full object-cover mx-auto shadow-md" />
+             <p class="mt-3 font-semibold text-gray-700">Bandung</p>
+        </div>
+
+      <!-- Gambar 3 -->
+        <div class="text-center">
+        <img src=https://picsum.photos/id/12/2500/1667
+             class="w-32 h-32 rounded-full object-cover mx-auto shadow-md" />
+            <p class="mt-3 font-semibold text-gray-700">Surabaya</p>
+         </div>
+    
+  </section>
         <hr/>
        
         <!--Portofolio-->
-        <section id="portofolio"class="min-h-{500px}">
+        <section id="portofolio"class="min-h-[500px]">
             <header>
                 <h2 class="text-center text{24px} font-bold py-{16px}">
                     Portofolio
                 </h2>
             </header>
+            
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      
+    <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">1. Web E-Commerce “BelanjaKuy”</h3>
+        <p class="text-gray-600">Platform belanja online dengan integrasi pembayaran digital dan fitur live chat.</p>
+      </div>
+
+    <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">2. Mobile App “FitLife”</h3>
+        <p class="text-gray-600">Aplikasi kesehatan & kebugaran dengan fitur pelacak kalori dan workout planner.</p>
+      </div>
+
+    <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">3. Company Profile Website PT Maju Bersama</h3>
+        <p class="text-gray-600">Website profil perusahaan dengan desain modern dan sistem CMS sederhana.</p>
+      </div>
+
+    <!-- Card 4 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">4. SaaS Platform “EduSmart”</h3>
+        <p class="text-gray-600">Sistem pembelajaran daring untuk sekolah dan universitas dengan fitur ujian online.</p>
+      </div>
+
+    <!-- Card 5 -->
+      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition sm:col-span-2">
+        <h3 class="text-xl font-semibold mb-2">5. Project IoT Monitoring</h3>
+        <p class="text-gray-600">Dashboard berbasis web untuk memantau sensor suhu dan kelembaban secara real-time.</p>
+      </div>
+
+    </div>
+  </section>
         </section>
        
         <hr/>
         
         <!--Message Us-->
-        <section id="message-us" class="min-h-{500px}">
+        <section id="message-us" class="min-h-[500px]">
             <header>
                 <h2 class="text-center text{24px} font-bold py-{16px}">
                     Message Us
@@ -76,20 +142,27 @@
             </header>
             
             <form class="px-{16px}">
-                <label for="name" class="block py-{8px}">
+                <label for="name-input" class="block py-{8px}">
                      Name:
-                    <input type="text" id="name" class="border p-{4px} w-full" required>
+                    <input type="text" id="name-input" class="border p-{4px} w-full" required>
                 </label>
-                <label for="email" class="block py-{8px}">
+                <label for="email-input" class="block py-{8px}">
                     Email:
-                    <input type="email" id="email" class="border p-{4px} w-full" required>
+                    <input type="email" id="email-input" class="border p-{4px} w-full" required>
                 </label>
-                <label for="message" class="block py-{8px}">
+                <label for="message-input" class="block py-{8px}">
                     Message:
-                    <textarea id="message" class="border p-{4px} w-full" required></textarea>
+                    <textarea id="message-input" class="border p-{4px} w-full" required></textarea>
                 </label>
-                <button type="submit" class="border p-{4px} mt-{8px}">Send Message</button>
+                <button type="button" onclick="validateForm()" class="border p-{4px} mt-{8px}">Send Message</button>
             </form>
+             <!-- HASIL -->
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold mb-4">Hasil Input</h2>
+      <div id="hasil" class="text-gray-600">
+        Belum ada data yang diinput.
+      </div>
+    </div>
         </section>
     </main>
 
@@ -97,6 +170,6 @@
     <footer class="text-center"></footer>
     
     <!-- JS External -->
-    <script src=""></script>  <script src="JS\script.js"><</script>
+    <script src=""></script>  <script src="JS\script.js"></script>
 </body>
 </html>
