@@ -27,7 +27,8 @@ function validateForm() {
 const form = document.getElementById('myForm');
 const hasilBox = document.getElementById('hasilBox');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function(e) 
+{
   e.preventDefault(); // cegah reload
 
   const nama = document.getElementById('nama').value;
