@@ -134,40 +134,63 @@
         <hr/>
         
         <!--Message Us-->
-        <section id="message-us" class="min-h-[500px]">
-            <header>
-                <h2 class="text-center text{24px} font-bold py-{16px}">
-                    Message Us
-                </h2>
-            </header>
-            
-            <form class="px-{16px}">
-                <label for="name-input" class="block py-{8px}">
-                     Name:
-                    <input type="text" id="name-input" class="border p-{4px} w-full" required>
-                </label>
-                <label for="email-input" class="block py-{8px}">
-                    Email:
-                    <input type="email" id="email-input" class="border p-{4px} w-full" required>
-                </label>
-                <label for="message-input" class="block py-{8px}">
-                    Message:
-                    <textarea id="message-input" class="border p-{4px} w-full" required></textarea>
-                </label>
-                <button type="button" onclick="validateForm()" class="border p-{4px} mt-{8px}">Send Message</button>
-            </form>
-             <!-- HASIL -->
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h2 class="text-2xl font-bold mb-4">Hasil Input</h2>
-      <div id="hasil" class="text-gray-600">
-        Belum ada data yang diinput.
-      </div>
-    </div>
-        </section>
-    </main>
+        <!-- FORM -->
+    <div class="bg-white p-6 rounded-xl shadow mb-6">
+      <h2 class="text-2xl font-bold mb-4">Message Us</h2>
+      <form id="myForm" class="space-y-4">
+        
+        <!-- Nama -->
+        <div>
+          <label for="nama" class="block font-medium">Nama</label>
+          <input type="text" id="nama" name="nama" 
+                 class="w-full mt-1 border rounded-lg p-2 focus:ring focus:ring-blue-300" required>
+        </div>
 
+        <!-- Tanggal Lahir -->
+        <div>
+          <label for="tanggal" class="block font-medium">Tanggal Lahir</label>
+          <input type="date" id="tanggal" name="tanggal" 
+                 class="w-full mt-1 border rounded-lg p-2 focus:ring focus:ring-blue-300" required>
+        </div>
+
+        <!-- Jenis Kelamin -->
+        <div>
+          <label for="jk" class="block font-medium">Jenis Kelamin</label>
+          <select id="jk" name="jk" 
+                  class="w-full mt-1 border rounded-lg p-2 focus:ring focus:ring-blue-300" required>
+            <option value="">-- Pilih --</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+
+        <!-- Pesan -->
+        <div>
+          <label for="pesan" class="block font-medium">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4" 
+                    class="w-full mt-1 border rounded-lg p-2 focus:ring focus:ring-blue-300" required></textarea>
+        </div>
+
+        <button type="submit" 
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- Tempat muncul box hasil -->
+    <div id="hasilBox" class="space-y-4"></div>
+  </div>
+
+  <!-- Hubungkan file JS -->
+  <script src="script.js"></script>
+
+
+    <hr/>
     <!--Footer content-->
-    <footer class="text-center"></footer>
+    <footer>
+        <p class="text-right p~{4px}">&copy; 2024 TechNova Solutions</p>
+    </footer>
     
     <!-- JS External -->
     <script src=""></script>  <script src="JS\script.js"></script>

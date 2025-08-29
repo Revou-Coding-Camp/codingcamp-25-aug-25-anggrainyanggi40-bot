@@ -24,3 +24,29 @@ function validateForm() {
         alert("Thank you for your message, " + name + "!");
     }
 }
+const form = document.getElementById('myForm');
+const hasilBox = document.getElementById('hasilBox');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // cegah reload
+
+  const nama = document.getElementById('nama').value;
+  const tanggal = document.getElementById('tanggal').value;
+  const jk = document.getElementById('jk').value;
+  const pesan = document.getElementById('pesan').value;
+
+  // Buat box hasil dengan Tailwind
+  const box = document.createElement('div');
+  box.className = "bg-white p-6 rounded-xl shadow border-l-4 border-blue-500";
+  box.innerHTML = `
+    <p><strong>Nama:</strong> ${nama}</p>
+    <p><strong>Tanggal Lahir:</strong> ${tanggal}</p>
+    <p><strong>Jenis Kelamin:</strong> ${jk}</p>
+    <p><strong>Pesan:</strong> ${pesan}</p>`;
+
+  // Tambahkan box ke container hasil
+  hasilBox.appendChild(box);
+
+  // Reset form setelah submit
+  form.reset();
+});
