@@ -7,17 +7,94 @@
 
     <!-- CSS External -->
     <link rel="stylesheet" href="CSS\style.css">
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
 
     <!--Header content-->
-    <header></header>
+    <header class="main-header py~{8px} px~{4px} flex justify-between items-center">
+        <!-- Icon -->
+        <div class="logo"></div>
+
+        <!--Navbar-->
+        <nav class="flex">
+            <a href="" class="border p~{4px}">Home</a>
+            <a href="" class="border p~{4px}">Our Profil</a>
+            <a href="" class="border p~{4px}">Portofolio</a>
+            <a href="" class="border p~{4px}">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
 
     <!--Main content-->
-    <main></main>
+    <main>
 
-    <!--Footer Content-->
-    <footer></footer>
+        <!--Home-->
+        <section id="home-page" class="min-h-{500px}">
+            <header>
+                <h2 class="text-center text{24px} font-bold py-{16px}">
+                    Welcome to Our Website
+                </h2>
+            </header>
+            <p class="text-center">
+                We are glad to have you here. Explore our profile and portfolio, and feel free to message us for any inquiries.
+            </p>
+        </section>
+        <hr/>
+
+        <!--Our Profil-->
+        <section id="our-profile" class="min-h-{500px}">
+            <header>
+                <h2 class="text-center text{24px} font-bold py-{16px}">
+                    Our Profil
+                </h2>
+            </header>
+        </section>
+        
+        <hr/>
+       
+        <!--Portofolio-->
+        <section id="portofolio"class="min-h-{500px}">
+            <header>
+                <h2 class="text-center text{24px} font-bold py-{16px}">
+                    Portofolio
+                </h2>
+            </header>
+        </section>
+       
+        <hr/>
+        
+        <!--Message Us-->
+        <section id="message-us" class="min-h-{500px}">
+            <header>
+                <h2 class="text-center text{24px} font-bold py-{16px}">
+                    Message Us
+                </h2>
+            </header>
+            
+            <form class="px-{16px}">
+                <label for="name" class="block py-{8px}">
+                     Name:
+                    <input type="text" id="name" class="border p-{4px} w-full" required>
+                </label>
+                <label for="email" class="block py-{8px}">
+                    Email:
+                    <input type="email" id="email" class="border p-{4px} w-full" required>
+                </label>
+                <label for="message" class="block py-{8px}">
+                    Message:
+                    <textarea id="message" class="border p-{4px} w-full" required></textarea>
+                </label>
+                <button type="submit" class="border p-{4px} mt-{8px}">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Footer content-->
+    <footer class="text-center"></footer>
     
     <!-- JS External -->
     <script src=""></script>  <script src="JS\script.js"><</script>
