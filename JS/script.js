@@ -50,4 +50,4 @@ form.addEventListener('submit', function(e)
 
   // Reset form setelah submit
   form.reset();
-0});
+});
